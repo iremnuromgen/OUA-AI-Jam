@@ -1,3 +1,4 @@
+import 'package:edulexia/pages/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:edulexia/colors/colors.dart';
 
@@ -19,7 +20,7 @@ class Login extends StatelessWidget {
               height: 300,
               width: 300,
             ),
-            Text(
+            const Text(
               "GİRİŞ",
               style: TextStyle(
                 fontFamily: "Poppins",
@@ -43,6 +44,28 @@ class Login extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(
+            width: 250,
+            height: 55,
+            child: ElevatedButton(
+              onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const Home()));
+              },
+              style: ElevatedButton.styleFrom(
+                primary: AppColors.pink,
+                onPrimary: Colors.white,
+                shadowColor: Colors.black,
+              ), 
+              child: const Text(
+                "Giriş Yap",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Poppins",
+                  fontSize: 25,
+                ),
+              ),
+            ),
+          ),
           ],
         ),
       ),
