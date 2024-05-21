@@ -1,5 +1,5 @@
 import 'package:edulexia/pages/LandingPage.dart';
-import 'package:edulexia/pages/WelcomePage.dart';
+import 'package:edulexia/pages/LettersPage.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Landing Page',
-      home: LandingPage()
+      home: Letters()
     );
   }
 }
